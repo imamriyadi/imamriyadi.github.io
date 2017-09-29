@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <base href="http://imamriyadi.net/">
         <title>Portofolio & Blog by Imam Riyadi</title>
         <meta name="google-site-verification" content="kD3vQrE87EL1sg4r-BfCeeSCX7Cdx9hP2qVilCleo-4" />
         <meta property="og:title" content="Blog & Portofolio by Imam Riyadi">
@@ -13,13 +14,13 @@
         <meta itemprop="name" content="Blog & Portofolio by Imam Riyadi">
         <meta itemprop="url" content="http://imamriyadi.net/">
         <meta itemprop="description" content="HI, I'm Imam Riyadi A Web Program Spesialis Backend Program">
-        <link href="http://imamriyadi.net/assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://imamriyadi.net/assets/css/icomoon/styles.css" rel="stylesheet">
-        <link href="http://imamriyadi.net/assets/css/style.css" rel="stylesheet">
-        <script src="http://imamriyadi.net/assets/js/jquery-3.2.1.min.js"></script>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/icomoon/styles.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
-        <script src="http://imamriyadi.net/assets/js/bootstrap.min.js"></script>
-        <script src="http://imamriyadi.net/assets/js/angular.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/angular.min.js"></script>
     </head>
     <body>
         <div class="header"></div>
@@ -46,7 +47,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="project-img">
                                 <div class="box-hover"></div>
-                                <img src="assets/]/images/1.JPG" alt="1">
+                                <img src="assets/images/1.JPG" alt="1">
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -214,7 +215,7 @@
                 email = $("input[name='email']").val();
                 if (email) {
                     $.ajax({
-                        'url': 'http://imamriyadi.net/email',
+                        'url': '/email',
                         'type': 'POST',
                         data: {email: email},
                         success: function (res) {
